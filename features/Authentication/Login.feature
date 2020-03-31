@@ -5,7 +5,7 @@ Feature: Login
   Scenario Outline: Attempting to log in with valid credentials; <email>
     Given the browser is at the "Login" page
     When the user tries to use "valid" credentials, "<email>" to log in
-    Then the title of the page should be "My account - My Store"
+    Then they are successfully logged in
 
     @dev
     Examples:
